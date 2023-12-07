@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppComponent should render title 1`] = `
+<ng17-demo-root
+  loggedIn={[Function Function]}
+  longText={[Function String]}
+>
+  <button
+    type="button"
+  >
+    Logout
+  </button><div>
+    <p>
+      This is not a long text
+    </p>
+    <span>
+      Placeholder
+    </span>
+  </div>
+</ng17-demo-root>
+`;
+
+exports[`AppComponent should render title 2`] = `
+<ng17-demo-root
+  loggedIn={[Function Function]}
+  longText={[Function String]}
+>
+  <button
+    type="button"
+  >
+    Logout
+  </button><div>
+    <p>
+      This is not a long text
+    </p>
+    <ng17-demo-animal-ratings>
+      <ul>
+        <li>
+          bear: 10
+        </li>
+        <li>
+          cat: 10
+        </li>
+        <li>
+          dog: 10
+        </li>
+      </ul>
+    </ng17-demo-animal-ratings>
+  </div>
+</ng17-demo-root>
+`;

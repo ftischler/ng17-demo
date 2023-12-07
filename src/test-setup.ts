@@ -5,4 +5,8 @@ globalThis.ngJest = {
     errorOnUnknownProperties: true,
   },
 };
+import { mockIntersectionObserver } from 'jsdom-testing-mocks';
+
 import 'jest-preset-angular/setup-jest';
+
+mockIntersectionObserver();
