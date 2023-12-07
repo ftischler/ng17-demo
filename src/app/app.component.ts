@@ -1,14 +1,24 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { AnimalRatingsComponent } from './animal-ratings.component';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
+  imports: [AnimalRatingsComponent, RouterModule],
   selector: 'ng17-demo-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-  title = 'ng17-demo';
+  loggedIn = signal<boolean>(false);
+  longText = 'This is not a long text';
+
+  login() {
+    this.loggedIn.set(true);
+  }
+
+  logout() {
+    this.loggedIn.set(false);
+  }
 }

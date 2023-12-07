@@ -1,1 +1,15 @@
-<ng17-demo-nx-welcome></ng17-demo-nx-welcome> <router-outlet></router-outlet>
+@if (loggedIn()) {
+<button type="button" (click)="logout()">Logout</button>
+<div>
+  <p>{{ longText }}</p>
+  @defer (on viewport) {
+  <ng17-demo-animal-ratings />
+  } @placeholder {
+  <span>Placeholder</span>
+  } @loading {
+  <span>Loading...</span>
+  }
+</div>
+} @else {
+<button type="button" (click)="login()">Login</button>
+}
