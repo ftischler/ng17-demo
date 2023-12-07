@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { AnimalRatingsComponent } from './animal-ratings.component';
+import { AnimalRatingsComponent } from './animal-ratings/animal-ratings.component';
 
 @Component({
   standalone: true,

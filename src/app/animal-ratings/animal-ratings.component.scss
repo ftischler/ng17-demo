@@ -1,0 +1,11 @@
+:host {
+  display: grid;
+  background-color: #e0cdd5;
+  color: #65394b;
+  font-weight: bold;
+
+  li {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+}

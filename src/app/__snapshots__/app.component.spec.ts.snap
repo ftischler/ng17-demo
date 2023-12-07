@@ -36,13 +36,36 @@ exports[`AppComponent should render title 2`] = `
     <ng17-demo-animal-ratings>
       <ul>
         <li>
-          bear: 10
+          <div>
+            🐻 Bear
+          </div>
+          <div>
+            10
+          </div>
         </li>
         <li>
-          cat: 10
+          <div>
+            🐶 Dog
+          </div>
+          <div>
+            10
+          </div>
         </li>
         <li>
-          dog: 10
+          <div>
+            🐱 Cat
+          </div>
+          <div>
+            10
+          </div>
+        </li>
+        <li>
+          <div>
+            🕷 Spider
+          </div>
+          <div>
+            2
+          </div>
         </li>
       </ul>
     </ng17-demo-animal-ratings>
